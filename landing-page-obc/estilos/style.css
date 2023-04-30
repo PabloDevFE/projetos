@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fonte:'Roboto', sans-serif;
+    --cor-bg: #FFE7D1;
+    --laranja: #ED4D1B;
+    --lranja-claro: #FF9A3C; 
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: var(--fonte);
+    background-color: var(--cor-bg);
+}
+
+
+
+
+#img-cantores {
+    width: 100vw;
+}
