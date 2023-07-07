@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #ffe53db8, #ff2525da);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 200px;
+    width: 500px;
+    background-color: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.507);
+}
+
+.relogio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.801);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.274);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.relogio span {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.relogio span.tempo {
+    font-size: 14px;
+}
+
+.mili {
+    width: 350px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    font-size: 40px;
+
+    background-color: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.507);
+}
+
+.mili span {
+    text-align: right;
+    color: #fff;
+}
+
+.tempo {
+    font-size: 14px; 
+}
