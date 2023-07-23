@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+font-family: monospace;}
+
+h1 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    height: 100%;
+}
+
+.divResult {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options {
+    font-size: clamp(50px, 10vw, 100px);
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
