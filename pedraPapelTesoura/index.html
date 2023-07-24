@@ -7,28 +7,32 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="esconder()">
 
     <div class="main">
 
     <div class="divResult">
-        <h2>Resultado</h2>
         <div>
-            <span id="selecionado">✊</span> X <span id="escolhaMaquina"></span>
+            <p><span id="selecionado">✊</span></p>
         </div>
-        <p>VITÓRIA</p>
+        
+        <div id="resultAnterior">
+          <h2>Resultado</h2>
+          <p><span id="resultAnteriorEmoji">✊</span> X <span id="selecionadoMaq"></span></p>
+          <p id="resultado"></p>
+        </div>
     </div>
 
       <h1>Selecione o que deseja jogar:</h1>
 
       <div class="flexContainer">
-        <span class="options" id="pedra" onclick="escolhaPedra()">✊</span>
-        <span class="options" id="papel" onclick="escolhaPapel()">🖐️</span>
-        <span class="options" id="tesoura" onclick="escolhaTesoura()">✌️</span>
+        <span class="options selecionado" id="pedra">✊</span>
+        <span class="options" id="papel">🖐️</span>
+        <span class="options" id="tesoura">✌️</span>
       </div>
 
       <div>
-      <button onclick="play()">PRONTO</button>
+      <button onclick="play()" class="button"><p>Pronto</p></button>
       </div>
 
     </div>
