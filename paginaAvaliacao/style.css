@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(2, 10, 58);
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-variant: small-caps;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(7, 5, 44);
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #fff;
+}
+
+h1 {
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 400;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    font-weight: 300;
+}
+
+hr {
+    margin: 20px;
+    border-color: #ff7b00;
+}
+
+.image {
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
+.divNotas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nota {
+    background-color: #ff7b00;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+.selecionado {
+    border: solid 3px #fff;
+}
+
+button {
+    display: block;
+    margin: auto;
+
+    width: 240px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff7b00;
+
+    font-family: 'Kanit', sans-serif;
+    font-variant: small-caps;
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
