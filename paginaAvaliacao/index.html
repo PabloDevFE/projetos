@@ -8,13 +8,13 @@
   </head>
   <body>
     <main>
-      <h1>Por favor, faça a avaliação</h1>
+      <h1 id="titulo">Avalie seu best aqui</h1>
 
       <div>
-        <img src="midias/undraw_team_up_re_84ok.svg" alt="" class="image"/>
-        <h2>Selecione uma nota:</h2>
+        <img src="midias/undraw_team_up_re_84ok.svg" alt="" class="image" id="image"/>
+        <h2 id="subTitulo">Selecione uma nota:</h2>
 
-        <div class="divNotas">
+        <div class="divNotas" id="notas">
           <span class="nota" id="1">1</span>
           <span class="nota" id="2">2</span>
           <span class="nota" id="3">3</span>
@@ -24,7 +24,9 @@
 
         <hr>
 
-        <button>Enviar feedback</button>
+        <p id="text"></p>
+
+        <button onclick="enviar()" id="botao">Enviar feedback</button>
       </div>
     </main>
 

@@ -12,6 +12,7 @@ body {
     font-family: 'Kanit', sans-serif;
     font-variant: small-caps;
 
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +23,7 @@ main {
     display: flex;
     flex-direction: column;
     background-color: rgb(7, 5, 44);
-    padding: 15px;
+    padding: 15px 5px;
     border-radius: 15px;
     border: 2px solid #fff;
 }
@@ -45,17 +46,18 @@ p {
 
 hr {
     margin: 20px;
-    border-color: #ff7b00;
+    border-color: #fff;
 }
 
 .image {
-    max-width: 350px;
+    width: clamp(250px, 80vw, 400px);
+    max-height: 350px;
     margin: auto;
     display: block;
 }
 
 .divNotas {
-    width: 100%;
+    width: clamp(300px, 100%, 400px);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -69,6 +71,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
     font-size: 20px;
 }
@@ -81,15 +84,28 @@ button {
     display: block;
     margin: auto;
 
-    width: 240px;
+    width: clamp(200px, 70%, 350px);
     height: 50px;
     border: none;
     border-radius: 10px;
     background-color: #ff7b00;
+    margin-bottom: 5px;
 
     font-family: 'Kanit', sans-serif;
     font-variant: small-caps;
-    color: #ffffff;
+    color: #fff;
     font-size: 25px;
     letter-spacing: 3px;
+}
+
+.hidden {
+    display: none;
+}
+
+#text {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    width: 300px;
 }
