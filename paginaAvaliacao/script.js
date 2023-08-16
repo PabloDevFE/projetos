@@ -41,19 +41,19 @@ function enviar() {
     image.src = "midias/undraw_completed_03xt.svg"
 
     if (notaFinal == 1) {
-        titulo.innerHTML = "Enfia no cu a avaliação, ok?"
-        text.innerHTML = `Nota ${notaFinal}? Avalia direito sua vagabunda, se não fica sem best`
+        titulo.innerHTML = "Muito obrigado pela avaliação!"
+        text.innerHTML = `Nota ${notaFinal}, poxa nos desculpe por não atender as expectativas, trabalharemos para melhorar.`
     } else if (notaFinal == 2) {
-        titulo.innerHTML = "OTARIA em maiúsculo mesmo"
-        text.innerHTML = `Nota ${notaFinal}? ainda tá baixa, quero nem papo mais`
+        titulo.innerHTML = "Muito obrigado pela avaliação!"
+        text.innerHTML = `Nota ${notaFinal}, estamos nos preparando para melhorar o serviço sempre.`
     } else if (notaFinal == 3) {
-        titulo.innerHTML = "Já é alguma coisa"
-        text.innerHTML = `Nota ${notaFinal}? Pelo menos é a média`
+        titulo.innerHTML = "Muito obrigado pela avaliação!"
+        text.innerHTML = `Nota ${notaFinal}, pelo menos não é o pior dos serviços, né?`
     } else if (notaFinal == 4) {
         titulo.innerHTML = "Muito obrigado pela avaliação!"
-        text.innerHTML = `Nota ${notaFinal}? você é linda`
+        text.innerHTML = `Nota ${notaFinal}, nosso objetivo é sempre a excelência, ainda chegaremos lá.`
     } else if (notaFinal == 5) {
-        titulo.innerHTML = "Olha que best mais perfeita"
-        text.innerHTML = `Nota ${notaFinal}? Por isso eu te amo`
+        titulo.innerHTML = "Muito obrigado pela avaliação!"
+        text.innerHTML = `Nota ${notaFinal}, obaaa ficamos felizes em conseguir atender suas expectativas!`
     }
 }
