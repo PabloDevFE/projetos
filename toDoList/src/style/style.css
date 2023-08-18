@@ -14,6 +14,14 @@
     box-sizing: border-box;
 }
 
+h1, h2 {
+    font-family: 'Sandwich Paper', cursive;
+}
+
+p, li {
+    font-family: 'Porcelain Paper Pie', cursive;    
+}
+
 body {
     background-image: url(../midias/white-paper-texture.jpg);
     background-repeat: repeat-y;
@@ -23,9 +31,10 @@ body {
 }
 
 .header {
-    height: 80px;
+    height: 65px;
     width: 100vw;
-    background-color: rgb(214, 193, 193);
+    background-color: #00916E;
+    color: #fff;
 
     display: flex;
     flex-direction: row;
@@ -34,6 +43,7 @@ body {
 
     position: fixed;
     top: 0px;
+    z-index: 999;
 }
 
 header > div {
@@ -47,12 +57,19 @@ header > div {
 }
 
 .headerPerfilImagem {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    filter: invert();
 }
 
 .headerTitulo {
     text-align: center;
+}
+
+.headerTitulo h1 {
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.582);
+    font-size: clamp(20px, 6vw, 60px);
 }
 
 .headerMenu {
@@ -60,23 +77,159 @@ header > div {
 }
 
 .main {
-    border: solid 2px red;
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
 }
 
 .mainPosts {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin-top: 10px;
+}
 
-    margin-top: 20px ;
+.mainPosts h1 {
+    padding-top: 10px;
+    font-size: clamp(30px, 4vw, 50px);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.315);
+}
+
+.postIt {
+    width: clamp(300px, 30vw, 450px);
+    padding: 15px;
+    margin: 20px;
+
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.473);
+}
+
+.pink {
+    background-color: #ff9bc8;
+    rotate: 3deg;
+}
+
+.yellow {
+    background-color: #feff9c;
+    rotate: -4deg;
+}
+
+.blue {
+    background-color: #a4fcfd;
+    rotate: 5deg;
+}
+
+.blue ul {
+    text-decoration: line-through;
+}
+
+.postIt h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.postItList {
+    list-style: none;
+}
+
+.postItList li {
+    font-size: 22px;
+    font-weight: 600;
+
 }
 
 .mainMakePost {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: auto;
+    width: clamp(300px, 80vw, 600px);
 
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.mainMakePostText {
+    margin-bottom: 10px;
+}
+
+.mainMakePostCaixa {
+    height: 40px;
+    width: clamp(300px, 70vw, 500px);
+    
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+
+    font-size: 20px;
+    font-family: 'Porcelain Paper Pie', cursive;
+    font-weight: 400;
+}
+
+
+.mainMakePostCaixa:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+    font-weight: 600;
+}
+
+.mainMakePostImportant {
+    width: 80%;
+    margin: 10px auto;
+    font-weight: 600;
+    font-family:  'Porcelain Paper Pie', cursive;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.37);
+}
+
+.mainMakePostImportantChoose {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 18px;
+}
+
+.mainMakePostImportant p{
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+.makePostButton {
+    margin-top: 5px;
+    height: 45px;
+    width: 200px;
+    rotate: -4deg;
+    cursor: pointer;
+    background-color: #ffbb5c;
+    font-family:  'Sandwich Paper', cursive;
+    font-weight: 600;
+    font-size: 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.438);
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 600;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.486);
+    height: 30px;
+    background-color: #00916E;
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
 }

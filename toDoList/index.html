@@ -1,66 +1,108 @@
 <!DOCTYPE html>
 <html lang="Pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do List</title>
-    <link rel="stylesheet" href="src/style/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="src/style/style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="headerPerfil">
-            <img src="src/midias/do-utilizador.png" alt="" class="headerPerfilImagem">
-            <h2>Pablo Henrique</h2>
-        </div>
+      <div class="headerPerfil">
+        <img
+          src="src/midias/do-utilizador.png"
+          alt=""
+          class="headerPerfilImagem"
+        />
+        <h2>Pablo</h2>
+      </div>
 
-        <div class="headerTitulo">
-            <h1>Titúlo</h1>
-        </div>
+      <div class="headerTitulo">
+        <h1>To do list!</h1>
+      </div>
 
-        <div class="headerMenu">
-            <img src="src/midias/icons8-hamburger-menu.svg" alt="">
-        </div>
+      <div class="headerMenu">
+        <img src="src/midias/icons8-hamburger-menu.svg" alt="" />
+      </div>
     </header>
 
     <main class="main">
-        <section class="mainPosts">
-            <div>
-                <h1>Importante</h1>
-                <input type="checkbox" name="" id=""> Lavar roupa
-            </div>
-            <div>
-                <h1>Normal</h1>
-                <input type="checkbox" name="" id=""> Jogar bola
-            </div>
-            <div>
-                <h1>Feito</h1>
-                <input type="checkbox" name="" id=""> Aomosso
-            </div>
-        </section>
+      <section class="mainPosts">
+        <div class="postIt pink">
+          <h1>Importante</h1>
+          <ul class="postItList">
+            <li><input type="checkbox" name="" id="" /> Lavar roupa</li>
 
-        <section class="mainMakePost">
-            <form action="">
-                <label for="newToDo">Adicionar tarefa
-                   <input type="text" name="" id="newToDo"> 
-                </label>
-                
-                <div>
-                    <label for="Importante"> Importante
-                       <input type="radio" name="importancia" id="Importante">
-                    </label>
-                    <label for="normal"> Normal
-                        <input type="radio" name="importancia" id="normal">
-                     </label>
-                </div>
-            </form>
-            <span>ENVIAR</span>
-        </section>
+            <li><input type="checkbox" name="" id="" /> Lavar roupa</li>
+
+            <li><input type="checkbox" name="" id="" /> Lavar roupa</li>
+
+            <li><input type="checkbox" name="" id="" /> Lavar roupa</li>
+          </ul>
+        </div>
+
+        <div class="postIt yellow">
+          <h1>Normal</h1>
+          <ul class="postItList">
+            <li><input type="checkbox" name="" id="" /> Lavar roupa</li>
+
+            <li><input type="checkbox" name="" id="" /> Lavar roupa</li>
+          </ul>
+        </div>
+
+        <div class="postIt blue">
+          <h1>Feito</h1>
+          <ul class="postItList">
+            <li><input type="checkbox" name="" id=""  checked/> Lavar roupa </li>
+            <li><input type="checkbox" name="" id=""  checked/> Lavar roupa</li>
+            <li><input type="checkbox" name="" id=""  checked/> Lavar roupa</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mainMakePost">
+        <form>
+          <div class="mainMakePostText">
+            <label for="newToDo">
+              <input
+                type="text"
+                name=""
+                id="newToDo"
+                placeholder="Adicionar tarefa"
+                class="mainMakePostCaixa"
+                autocomplete="off"
+              />
+            </label>
+          </div>
+
+          <div class="mainMakePostImportant">
+            <p>Importancia da sua tarefa:</p>
+
+            <div class="mainMakePostImportantChoose">
+            <label for="Importante">
+              Importante
+              <input type="radio" name="importancia" id="Importante" />
+            </label>
+            <label for="normal">
+              Normal
+              <input type="radio" name="importancia" id="normal" />
+            </label>              
+            </div>
+
+          </div>
+        </form>
+        
+        <span class="makePostButton">Adicionar</span>
+      </section>
     </main>
 
-    <footer>
-        <p>Feito por <a href="https://github.com/pablodevfe" target="_blank">Pablo</a></p>
+    <footer class="footer">
+      <p>
+        Feito por
+        <a href="https://github.com/pablodevfe" target="_blank">Pablo</a>
+      </p>
     </footer>
-    
+
     <script src="src/js/index.js"></script>
-</body>
+  </body>
 </html>
