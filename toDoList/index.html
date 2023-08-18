@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="src/style/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="headerPerfil">
+            <img src="src/midias/do-utilizador.png" alt="" class="headerPerfilImagem">
+            <h2>Pablo Henrique</h2>
+        </div>
+
+        <div class="headerTitulo">
+            <h1>Titúlo</h1>
+        </div>
+
+        <div class="headerMenu">
+            <img src="src/midias/icons8-hamburger-menu.svg" alt="">
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="mainPosts">
+            <div>
+                <h1>Importante</h1>
+                <input type="checkbox" name="" id=""> Lavar roupa
+            </div>
+            <div>
+                <h1>Normal</h1>
+                <input type="checkbox" name="" id=""> Jogar bola
+            </div>
+            <div>
+                <h1>Feito</h1>
+                <input type="checkbox" name="" id=""> Aomosso
+            </div>
+        </section>
+
+        <section class="mainMakePost">
+            <form action="">
+                <label for="newToDo">Adicionar tarefa
+                   <input type="text" name="" id="newToDo"> 
+                </label>
+                
+                <div>
+                    <label for="Importante"> Importante
+                       <input type="radio" name="importancia" id="Importante">
+                    </label>
+                    <label for="normal"> Normal
+                        <input type="radio" name="importancia" id="normal">
+                     </label>
+                </div>
+            </form>
+            <span>ENVIAR</span>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito por <a href="https://github.com/pablodevfe" target="_blank">Pablo</a></p>
+    </footer>
+    
+    <script src="src/js/index.js"></script>
+</body>
+</html>
