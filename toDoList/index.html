@@ -30,32 +30,26 @@
       <section class="mainPosts">
         <div class="postIt pink">
           <h1>Importante</h1>
-          <ul class="postItList">
-            <li><input type="checkbox" name="" id="" /> Lavar roupa</li>
-
-            <li><input type="checkbox" name="" id="" /> Lavar roupa</li>
-
-            <li><input type="checkbox" name="" id="" /> Lavar roupa</li>
-
-            <li><input type="checkbox" name="" id="" /> Lavar roupa</li>
+          <ul class="postItList" id="listaImportante">
+            <li>
+              <label for="tarefa1">
+                <input type="checkbox" name="" id="tarefa1" /> Lavar roupa
+              </label>
+            </li>
           </ul>
         </div>
 
         <div class="postIt yellow">
           <h1>Normal</h1>
           <ul class="postItList">
-            <li><input type="checkbox" name="" id="" /> Lavar roupa</li>
 
-            <li><input type="checkbox" name="" id="" /> Lavar roupa</li>
           </ul>
         </div>
 
         <div class="postIt blue">
           <h1>Feito</h1>
           <ul class="postItList">
-            <li><input type="checkbox" name="" id=""  checked/> Lavar roupa </li>
-            <li><input type="checkbox" name="" id=""  checked/> Lavar roupa</li>
-            <li><input type="checkbox" name="" id=""  checked/> Lavar roupa</li>
+
           </ul>
         </div>
       </section>
@@ -79,20 +73,19 @@
             <p>Importancia da sua tarefa:</p>
 
             <div class="mainMakePostImportantChoose">
-            <label for="Importante">
-              Importante
-              <input type="radio" name="importancia" id="Importante" />
-            </label>
-            <label for="normal">
-              Normal
-              <input type="radio" name="importancia" id="normal" />
-            </label>              
+              <label for="Importante">
+                Importante
+                <input type="radio" name="importancia" id="Importante" />
+              </label>
+              <label for="normal">
+                Normal
+                <input type="radio" name="importancia" id="normal" />
+              </label>
             </div>
-
           </div>
         </form>
-        
-        <span class="makePostButton">Adicionar</span>
+
+        <span class="makePostButton" id="botaoAdicionar">Adicionar</span>
       </section>
     </main>
 
