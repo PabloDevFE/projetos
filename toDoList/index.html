@@ -35,13 +35,14 @@
               <label for="tarefa1">
                 <input type="checkbox" name="" id="tarefa1" /> Lavar roupa
               </label>
+              <span class="iconExcluir" id="">X</span>
             </li>
           </ul>
         </div>
 
         <div class="postIt yellow">
           <h1>Normal</h1>
-          <ul class="postItList">
+          <ul class="postItList" id="listaNormal">
 
           </ul>
         </div>
@@ -61,7 +62,7 @@
               <input
                 type="text"
                 name=""
-                id="newToDo"
+                id="toDoText"
                 placeholder="Adicionar tarefa"
                 class="mainMakePostCaixa"
                 autocomplete="off"
@@ -75,11 +76,11 @@
             <div class="mainMakePostImportantChoose">
               <label for="Importante">
                 Importante
-                <input type="radio" name="importancia" id="Importante" />
+                <input type="radio" name="importancia" id="checkImportante" />
               </label>
               <label for="normal">
                 Normal
-                <input type="radio" name="importancia" id="normal" />
+                <input type="radio" name="importancia" id="checkNormal" checked/>
               </label>
             </div>
           </div>

@@ -1,11 +1,11 @@
 @font-face {
-    font-family: Porcelain Paper Pie;
-    src: url(../fonts/PorcelainPaperPie.ttf);
+    font-family: "Porcelain Paper Pie";
+    src: url(../fonts/PorcelainPaperPie.ttf) format(trutype);
 }
 
 @font-face {
-    font-family: Sandwich Paper;
-    src: url(../fonts/Sandwich\ Paper.ttf);
+    font-family: "Sandwich Paper";
+    src: url(../fonts/SandwichPaper.ttf) format(trutype);
 }
 
 * {
@@ -100,6 +100,7 @@ header > div {
     width: clamp(300px, 30vw, 450px);
     padding: 15px;
     margin: 20px;
+    overflow-wrap: break-word;
 
     box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.473);
 }
@@ -134,8 +135,28 @@ header > div {
 
 .postItList li {
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 400;
+    position: relative;
+}
 
+.iconExcluir {
+    position: absolute;
+    color: transparent;
+    z-index: 999;
+    right: 0;
+    top: 40%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.postItList li:hover  .iconExcluir{
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.349);
 }
 
 .mainMakePost {
@@ -154,6 +175,7 @@ header > div {
 
 .mainMakePostCaixa {
     height: 40px;
+    padding: 4px;
     width: clamp(300px, 70vw, 500px);
     
     border: none;
@@ -169,7 +191,7 @@ header > div {
 .mainMakePostCaixa:focus {
     outline: none;
     border-bottom: 2px solid black;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .mainMakePostImportant {
