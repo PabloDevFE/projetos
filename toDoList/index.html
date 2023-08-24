@@ -31,9 +31,9 @@
         <div class="postIt pink">
           <h1>Importante</h1>
           <ul class="postItList" id="listaImportante">
-            <li>
+            <li class="li">
               <label for="tarefa1">
-                <input type="checkbox" name="" id="tarefa1" /> Lavar roupa
+                <input type="checkbox" name="" id="tarefa1" class="checkbox"/> Lavar roupa
               </label>
               <span class="iconExcluir" id="">X</span>
             </li>
@@ -49,7 +49,7 @@
 
         <div class="postIt blue">
           <h1>Feito</h1>
-          <ul class="postItList">
+          <ul class="postItList" id="listaFeito">
 
           </ul>
         </div>
@@ -58,7 +58,6 @@
       <section class="mainMakePost">
         <form>
           <div class="mainMakePostText">
-            <label for="newToDo">
               <input
                 type="text"
                 name=""
@@ -67,21 +66,23 @@
                 class="mainMakePostCaixa"
                 autocomplete="off"
               />
-            </label>
           </div>
 
           <div class="mainMakePostImportant">
             <p>Importancia da sua tarefa:</p>
 
             <div class="mainMakePostImportantChoose">
+
               <label for="Importante">
                 Importante
                 <input type="radio" name="importancia" id="checkImportante" />
               </label>
+
               <label for="normal">
                 Normal
                 <input type="radio" name="importancia" id="checkNormal" checked/>
               </label>
+
             </div>
           </div>
         </form>

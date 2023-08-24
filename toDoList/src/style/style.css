@@ -1,257 +1,275 @@
 @font-face {
-    font-family: "Porcelain Paper Pie";
-    src: url(../fonts/PorcelainPaperPie.ttf) format(trutype);
+  font-family: "Porcelain Paper Pie";
+  src: url(../fonts/PorcelainPaperPie.ttf) format(trutype);
 }
 
 @font-face {
-    font-family: "Sandwich Paper";
-    src: url(../fonts/SandwichPaper.ttf) format(trutype);
+  font-family: "Sandwich Paper";
+  src: url(../fonts/SandwichPaper.ttf) format(trutype);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1, h2 {
-    font-family: 'Sandwich Paper', cursive;
+h1,
+h2 {
+  font-family: "Sandwich Paper", cursive;
 }
 
-p, li {
-    font-family: 'Porcelain Paper Pie', cursive;    
+p,
+li {
+  font-family: "Porcelain Paper Pie", cursive;
 }
 
 body {
-    background-image: url(../midias/white-paper-texture.jpg);
-    background-repeat: repeat-y;
-    background-position: center center;
+  background-image: url(../midias/white-paper-texture.jpg);
+  background-repeat: repeat-y;
+  background-position: center center;
 
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .header {
-    height: 65px;
-    width: 100vw;
-    background-color: #00916E;
-    color: #fff;
+  height: 65px;
+  width: 100vw;
+  background-color: #00916e;
+  color: #fff;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
-    position: fixed;
-    top: 0px;
-    z-index: 999;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
 }
 
 header > div {
-    width: 33%;
-    padding: 0 20px;
+  width: 33%;
+  padding: 0 20px;
 }
 
 .headerPerfil {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .headerPerfilImagem {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    filter: invert();
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  filter: invert();
 }
 
 .headerTitulo {
-    text-align: center;
+  text-align: center;
 }
 
 .headerTitulo h1 {
-    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.582);
-    font-size: clamp(20px, 6vw, 60px);
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.582);
+  font-size: clamp(20px, 6vw, 60px);
 }
 
 .headerMenu {
-    text-align: end;
+  text-align: end;
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .mainPosts {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 
 .mainPosts h1 {
-    padding-top: 10px;
-    font-size: clamp(30px, 4vw, 50px);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.315);
+  padding-top: 10px;
+  font-size: clamp(30px, 4vw, 50px);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.315);
 }
 
 .postIt {
-    width: clamp(300px, 30vw, 450px);
-    padding: 15px;
-    margin: 20px;
-    overflow-wrap: break-word;
+  width: clamp(300px, 30vw, 450px);
+  padding: 15px;
+  margin: 20px;
+  overflow-wrap: break-word;
 
-    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.473);
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.473);
 }
 
 .pink {
-    background-color: #ff9bc8;
-    rotate: 3deg;
+  background-color: #ff9bc8;
+  min-height: 240px;
+  rotate: 3deg;
 }
 
 .yellow {
-    background-color: #feff9c;
-    rotate: -4deg;
+  background-color: #feff9c;
+  min-height: 260px;
+  rotate: -4deg;
 }
 
 .blue {
-    background-color: #a4fcfd;
-    rotate: 5deg;
+  background-color: #a4fcfd;
+  min-height: 230px;
+  rotate: 5deg;
 }
 
 .blue ul {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .postIt h1 {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .postItList {
-    list-style: none;
+  list-style: none;
 }
 
 .postItList li {
-    font-size: 22px;
-    font-weight: 400;
-    position: relative;
+  font-size: 22px;
+  font-weight: 400;
+  position: relative;
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  vertical-align: middle;
+  height: 18px;
+  width: 18px;
+  border: 1px solid black;
+  background-color: transparent;
+}
+
+.checkbox:checked {
+  background-color: #ffffff8f;
 }
 
 .iconExcluir {
-    position: absolute;
-    color: transparent;
-    z-index: 999;
-    right: 0;
-    top: 40%;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
+  position: absolute;
+  color: transparent;
+  z-index: 999;
+  right: 0;
+  top: 40%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
 }
 
-.postItList li:hover  .iconExcluir{
-    color: #fff;
-    cursor: pointer;
-    background-color: rgba(255, 0, 0, 0.349);
+.postItList li:hover .iconExcluir {
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.349);
 }
 
 .mainMakePost {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
-    width: clamp(300px, 80vw, 600px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: clamp(300px, 80vw, 600px);
 
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .mainMakePostText {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .mainMakePostCaixa {
-    height: 40px;
-    padding: 4px;
-    width: clamp(300px, 70vw, 500px);
-    
-    border: none;
-    background-color: transparent;
-    border-bottom: 2px solid black;
+  height: 40px;
+  padding: 4px;
+  width: clamp(300px, 70vw, 500px);
 
-    font-size: 20px;
-    font-family: 'Porcelain Paper Pie', cursive;
-    font-weight: 400;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid black;
+
+  font-size: 20px;
+  font-family: "Porcelain Paper Pie", cursive;
+  font-weight: 400;
 }
 
-
 .mainMakePostCaixa:focus {
-    outline: none;
-    border-bottom: 2px solid black;
-    font-weight: 500;
+  outline: none;
+  border-bottom: 2px solid black;
+  font-weight: 500;
 }
 
 .mainMakePostImportant {
-    width: 80%;
-    margin: 10px auto;
-    font-weight: 600;
-    font-family:  'Porcelain Paper Pie', cursive;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.37);
+  width: 80%;
+  margin: 10px auto;
+  font-weight: 600;
+  font-family: "Porcelain Paper Pie", cursive;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.37);
 }
 
 .mainMakePostImportantChoose {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
 
-    font-size: 18px;
+  font-size: 18px;
 }
 
-.mainMakePostImportant p{
-    padding: 10px;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 400;
+.mainMakePostImportant p {
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 400;
 }
-
 
 .makePostButton {
-    margin-top: 5px;
-    height: 45px;
-    width: 200px;
-    rotate: -4deg;
-    cursor: pointer;
-    background-color: #ffbb5c;
-    font-family:  'Sandwich Paper', cursive;
-    font-weight: 600;
-    font-size: 30px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.438);
+  margin-top: 5px;
+  height: 45px;
+  width: 200px;
+  rotate: -4deg;
+  cursor: pointer;
+  background-color: #ffbb5c;
+  font-family: "Sandwich Paper", cursive;
+  font-weight: 600;
+  font-size: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.438);
 }
 
-
 .footer {
-    position: fixed;
-    bottom: 0px;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    font-weight: 600;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.486);
-    height: 30px;
-    background-color: #00916E;
-    color: #fff;
+  font-weight: 600;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.486);
+  height: 30px;
+  background-color: #00916e;
+  color: #fff;
 }
 
 .footer a {
-    color: #fff;
+  color: #fff;
 }
