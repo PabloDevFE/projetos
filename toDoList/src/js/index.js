@@ -9,6 +9,7 @@ const textInput = document.querySelector("#toDoText");
 const checkNormal = document.querySelector("#checkImportante");
 const checkImportante = document.querySelector("#checkNormal");
 
+let li;
 let numeroId = 1;
 let importancia = 0;
 
@@ -44,11 +45,34 @@ botao.addEventListener("click", () => {
 
   toDoItens = document.querySelectorAll(".liItem");
 
+  //faz a verificação se o estado do checkbox muda
   toDoItens.forEach((item) => {
     item.addEventListener("click", () => {
-      var check = document.getElementById(item.id);
 
-      console.log(`excluir elemento ${item.id}`);
+      let feito = (lista) => {
+        check = document.getElementById(item.id);
+        lista.removeChild(check);
+
+        li = `<li class="liItem" id="item${numeroId}">
+        <label for="toDoItem${numeroId}">
+            <input type="checkbox" class="checkbox" checked name="" id="toDoItem${numeroId}"/> ${tarefa} 
+        </label>
+        <span class="iconExcluir" id="toDoExcluir${numeroId}">X</span>
+        </li>`;
+      
+        listaFeita.innerHTML += li
+
+        li = ""
+      };
+
+   
+      if (item.parentElement.id == "listaNormal") {
+        feito(listaNormal);
+      } else {
+        feito(listaImportante);
+      };
+
+
     });
   });
 });
