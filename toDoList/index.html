@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do List</title>
     <link rel="stylesheet" href="src/style/style.css" />
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -30,44 +39,36 @@
       <section class="mainPosts">
         <div class="postIt pink">
           <h1>Importante</h1>
-          <ul class="postItList" id="listaImportante">
-            
-          </ul>
+          <ul class="postItList" id="listaImportante"></ul>
         </div>
 
         <div class="postIt yellow">
           <h1>Normal</h1>
-          <ul class="postItList" id="listaNormal">
-
-          </ul>
+          <ul class="postItList" id="listaNormal"></ul>
         </div>
 
         <div class="postIt blue">
           <h1>Feito</h1>
-          <ul class="postItList" id="listaFeito">
-
-          </ul>
+          <ul class="postItList" id="listaFeito"></ul>
         </div>
       </section>
 
       <section class="mainMakePost">
-        <form>
           <div class="mainMakePostText">
-              <input
-                type="text"
-                name=""
-                id="toDoText"
-                placeholder="Adicionar tarefa"
-                class="mainMakePostCaixa"
-                autocomplete="off"
-              />
+            <input
+              type="text"
+              name=""
+              id="toDoText"
+              placeholder="Adicionar tarefa"
+              class="mainMakePostCaixa"
+              autocomplete="off"
+            />
           </div>
 
           <div class="mainMakePostImportant">
             <p>Importancia da sua tarefa:</p>
 
             <div class="mainMakePostImportantChoose">
-
               <label for="Importante">
                 Importante
                 <input type="radio" name="importancia" id="checkImportante" />
@@ -75,12 +76,15 @@
 
               <label for="normal">
                 Normal
-                <input type="radio" name="importancia" id="checkNormal" checked/>
+                <input
+                  type="radio"
+                  name="importancia"
+                  id="checkNormal"
+                  checked
+                />
               </label>
-
             </div>
           </div>
-        </form>
 
         <span class="makePostButton" id="botaoAdicionar">Adicionar</span>
       </section>

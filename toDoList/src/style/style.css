@@ -1,27 +1,17 @@
-@font-face {
-  font-family: "Porcelain Paper Pie";
-  src: url(../fonts/PorcelainPaperPie.ttf) format(trutype);
-}
-
-@font-face {
-  font-family: "Sandwich Paper";
-  src: url(../fonts/SandwichPaper.ttf) format(trutype);
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} 
 
 h1,
 h2 {
-  font-family: "Sandwich Paper", cursive;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 p,
 li {
-  font-family: "Porcelain Paper Pie", cursive;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 body {
@@ -204,8 +194,8 @@ header > div {
   border-bottom: 2px solid black;
 
   font-size: 20px;
-  font-family: "Porcelain Paper Pie", cursive;
-  font-weight: 400;
+  font-family: 'Shadows Into Light', cursive;
+      font-weight: 400;
 }
 
 .mainMakePostCaixa:focus {
@@ -217,9 +207,8 @@ header > div {
 .mainMakePostImportant {
   width: 80%;
   margin: 10px auto;
-  font-weight: 600;
-  font-family: "Porcelain Paper Pie", cursive;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.37);
+  font-family: 'Shadows Into Light', cursive;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 
 .mainMakePostImportantChoose {
@@ -245,9 +234,8 @@ header > div {
   rotate: -4deg;
   cursor: pointer;
   background-color: #ffbb5c;
-  font-family: "Sandwich Paper", cursive;
-  font-weight: 600;
-  font-size: 30px;
+  font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
 
   display: flex;
   align-items: center;

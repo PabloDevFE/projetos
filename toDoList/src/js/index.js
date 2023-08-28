@@ -16,7 +16,7 @@ let importancia = 0;
 // variavel que vai receber o array com todos os li
 let toDoItens;
 
-botao.addEventListener("click", () => {
+botao.addEventListener('click', () => {
   //pega o innput
   let tarefa = textInput.value;
 
@@ -53,10 +53,10 @@ botao.addEventListener("click", () => {
         check = document.getElementById(item.id);
         lista.removeChild(check);
 
+        numeroId++
+
         li = `<li class="liItem" id="item${numeroId}">
-        <label for="toDoItem${numeroId}">
             <input type="checkbox" class="checkbox" checked name="" id="toDoItem${numeroId}"/> ${tarefa} 
-        </label>
         <span class="iconExcluir" id="toDoExcluir${numeroId}">X</span>
         </li>`;
       
