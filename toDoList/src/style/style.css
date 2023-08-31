@@ -89,10 +89,11 @@ header > div {
 }
 
 .postIt {
-  width: clamp(300px, 30vw, 450px);
-  padding: 15px;
+  width: clamp(300px, 30vw, 370px);
+  padding: 5px;
   margin: 20px;
   overflow-wrap: break-word;
+  filter: sepia(0.2);
 
   box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.473);
 }
@@ -126,12 +127,24 @@ header > div {
 
 .postItList {
   list-style: none;
+  padding: 15px;
 }
 
 .postItList li {
   font-size: 22px;
   font-weight: 400;
   position: relative;
+}
+
+.liItem::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.315);
+
+  position: absolute;
+  bottom: 0px;
+  right: 0;
 }
 
 .checkbox {
@@ -193,15 +206,15 @@ header > div {
   background-color: transparent;
   border-bottom: 2px solid black;
 
-  font-size: 20px;
+  font-size: 22px;
   font-family: 'Shadows Into Light', cursive;
-      font-weight: 400;
 }
 
 .mainMakePostCaixa:focus {
   outline: none;
+  padding-left: 10px;
   border-bottom: 2px solid black;
-  font-weight: 500;
+  transition: 0.4s;
 }
 
 .mainMakePostImportant {
@@ -222,7 +235,7 @@ header > div {
 
 .mainMakePostImportant p {
   padding: 10px;
-  font-size: 18px;
+  font-size: 22px;
   text-align: center;
   font-weight: 400;
 }
