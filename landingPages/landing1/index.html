@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="headerLogo">
+            <img src="images/logo.svg" alt="">
+        </div>
+
+        <div class="headerIconMenu">
+            <img src="images/icon-menu.svg" alt="">
+        </div>
+
+        <div class="hide menuMobileOpen">
+            <img src="images/icon-close-menu.svg" alt="" class="fecharIcon">
+
+            <ul>
+                <li>Features <span><img src="images/icon-arrow-down.svg" alt=""></span></li>
+                <li>Company <span><img src="images/icon-arrow-down.svg" alt=""></span></li>
+                <li>Careers</li>
+                <li>About</li>
+            </ul>
+
+            <div class="menuMobileOpenButtons">
+                <button class="buttonLogin">Login</button>
+                <button class="buttonRegister">Register</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <picture class="mainImagem">
+            <source media="(max-width: 600px)" srcset="images/image-hero-mobile.png">
+            <source media="(min-width: 601px)" srcset="images/image-hero-desktop.png">
+            <img src="images/image-hero-desktop.png" alt="">
+        </picture>
+
+        <section class="mainSection">
+            <h1>Make remote work</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore lorem necessitatibus fugiat hamlet!</p>
+            <button class="button">Learn More</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img src="images/client-databiz.svg" alt="">
+        <img src="images/client-audiophile.svg" alt="">
+        <img src="images/client-meet.svg" alt="">
+        <img src="images/client-maker.svg" alt="">
+    </footer>
+</body>
+</html>
