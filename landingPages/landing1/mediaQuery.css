@@ -1,0 +1,73 @@
+@media screen and (min-width: 700px) {
+    .headerIconMenu {
+        display: none;
+    }
+
+    .menuMobileOpen {
+        display: none;
+    }
+
+    .menuDesktop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 30px;
+    }
+    .menuDesktop ul {
+        color: hsl(0, 0%, 41%);
+        list-style: none;
+        font-size: 1.1rem;
+
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .menuDesktopButtons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menuDesktopButtons button {
+        width: 150px;
+        height: 40px;
+        border-radius: 15px;
+        color: hsl(0, 0%, 41%);
+        background-color: transparent;
+        font-size: 1rem;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .mainImagem {
+        width: 50%;
+    }
+
+    .mainImagem img {
+        width: 350px;
+    }
+
+    .mainSection {
+        display: flex;
+        align-items: flex-start;
+
+        width: 50%;
+    }
+
+    .mainSection h1 {
+        max-width: 400px;
+        text-align: left;
+    }
+    
+    .mainSection p {
+        text-align: left;
+        max-width: 350px;
+    }
+}

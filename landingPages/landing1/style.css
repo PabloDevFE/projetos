@@ -18,6 +18,10 @@ body {
     padding: 25px 20px;
 }
 
+.headerLogo img{
+    width: clamp(84px, 10vw, 100px);
+}
+
 .mainImagem img, .mainImagem source {
     max-width: 100%;
     display: block;
@@ -36,7 +40,7 @@ body {
 .mainSection h1 {
     margin-top: 20px;
     font-weight: 700;
-    font-size: clamp(38px, 5vw, 80px);
+    font-size: clamp(38px, 5vw, 60px);
 }
 
 .mainSection p {

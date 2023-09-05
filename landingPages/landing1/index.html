@@ -6,7 +6,7 @@
     <title>Page</title>
 
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="mediaQuery.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,19 @@
     <header class="header">
         <div class="headerLogo">
             <img src="images/logo.svg" alt="">
+        </div>
+
+        <div class="hide menuDesktop">
+            <ul>
+                <li>Features <span><img src="images/icon-arrow-down.svg" alt=""></span></li>
+                <li>Company <span><img src="images/icon-arrow-down.svg" alt=""></span></li>
+                <li>Careers</li>
+                <li>About</li>
+            </ul>
+            <div class="menuDesktopButtons">
+                <button class="buttonLogin">Login</button>
+                <button class="buttonRegister">Register</button>
+            </div>
         </div>
 
         <div class="headerIconMenu">
@@ -41,8 +54,8 @@
 
     <main class="main">
         <picture class="mainImagem">
-            <source media="(max-width: 600px)" srcset="images/image-hero-mobile.png">
-            <source media="(min-width: 601px)" srcset="images/image-hero-desktop.png">
+            <source media="(max-width: 700px)" srcset="images/image-hero-mobile.png">
+            <source media="(min-width: 701px)" srcset="images/image-hero-desktop.png" class="imgDesktop">
             <img src="images/image-hero-desktop.png" alt="">
         </picture>
 
@@ -50,14 +63,20 @@
             <h1>Make remote work</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore lorem necessitatibus fugiat hamlet!</p>
             <button class="button">Learn More</button>
+
+            <div class="footer">
+                <img src="images/client-databiz.svg" alt="">
+                <img src="images/client-audiophile.svg" alt="">
+                <img src="images/client-meet.svg" alt="">
+                <img src="images/client-maker.svg" alt="">
+            </div>
         </section>
+
+        <div class="footer">
+            
+        </div>
     </main>
 
-    <footer class="footer">
-        <img src="images/client-databiz.svg" alt="">
-        <img src="images/client-audiophile.svg" alt="">
-        <img src="images/client-meet.svg" alt="">
-        <img src="images/client-maker.svg" alt="">
-    </footer>
+
 </body>
 </html>
