@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 840px) {
     .headerIconMenu {
         display: none;
     }
@@ -42,32 +42,36 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
+        align-items: center;
         padding: 20px;
         gap: 20px;
     }
 
-    .mainImagem {
-        width: 50%;
-    }
-
     .mainImagem img {
-        width: 350px;
+        width: clamp(200px, 30vw, 700px);
     }
 
     .mainSection {
         display: flex;
         align-items: flex-start;
-
-        width: 50%;
+        width: clamp(300px, 50%, 700px);
     }
 
     .mainSection h1 {
         max-width: 400px;
         text-align: left;
+        margin-bottom: 20px;
     }
     
     .mainSection p {
         text-align: left;
         max-width: 350px;
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        margin-top: 20px;
+        justify-content: space-between;
+        width: 100%;
     }
 }
