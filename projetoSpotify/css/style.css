@@ -19,6 +19,12 @@ body {
     align-items: center;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+}
+
 #below-cover {
     display: flex;
     flex-direction: row;
